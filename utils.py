@@ -470,15 +470,15 @@ async def get_shortlink(chat_id, link):
     if URL.startswith("shorturllink") or URL.startswith("terabox.in") or URL.startswith("urlshorten.in"):
         URL = SHORTLINK_URL
         API = SHORTLINK_API
-    if URL == "api.shareus.io":
+    if URL == "tnshort.net/api":
         # method 1:
         # https = link.split(":")[0] #splitting https or http from link
         # if "http" == https: #if https == "http":
         #     https = "https"
         #     link = link.replace("http", https) #replacing http to https
-        # conn = http.client.HTTPSConnection("api.shareus.io")
+        # conn = http.client.HTTPSConnection("tnshort.net/api")
         # payload = json.dumps({
-        #   "api_key": "4c1YTBacB6PTuwogBiEIFvZN5TI3",
+        #   "api_key": "7da8b3b03899edea0102565e79a412c3a977db03",
         #   "monetization": True,
         #   "destination": link,
         #   "ad_page": 3,
@@ -538,7 +538,7 @@ async def get_verify_shorted_link(link):
         https = "https"
         link = link.replace("http", https)
 
-    if URL == "api.shareus.in":
+    if URL == "tnshort.net/api":
         url = f"https://{URL}/shortLink"
         params = {"token": API,
                   "format": "json",
@@ -671,7 +671,7 @@ async def send_all(bot, userid, files, ident, chat_id, user_name, query):
                                 InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                             ],[
-                                InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Kgashok04")
+                                InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="https://t.me/Askcaptainbot")
                                 ]
                             ]
                         )
