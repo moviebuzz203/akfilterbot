@@ -470,15 +470,15 @@ async def get_shortlink(chat_id, link):
     if URL.startswith("shorturllink") or URL.startswith("terabox.in") or URL.startswith("urlshorten.in"):
         URL = SHORTLINK_URL
         API = SHORTLINK_API
-    if URL == "tnshort.net/api":
+    if URL == "onepagelink.in/api":
         # method 1:
         # https = link.split(":")[0] #splitting https or http from link
         # if "http" == https: #if https == "http":
         #     https = "https"
         #     link = link.replace("http", https) #replacing http to https
-        # conn = http.client.HTTPSConnection("tnshort.net/api")
+        # conn = http.client.HTTPSConnection("onepagelink.in/api")
         # payload = json.dumps({
-        #   "api_key": "7da8b3b03899edea0102565e79a412c3a977db03",
+        #   "api_key": "66c65ee5dd31e83eb0ecdf29d1cd03477af927ba",
         #   "monetization": True,
         #   "destination": link,
         #   "ad_page": 3,
